@@ -63,6 +63,8 @@ a:hover {
 .header__checkbox,
 .more__checkbox,
 .less__checkbox {
+  width: 30px;
+  height: 30px;
   appearance: none;
   position: absolute;
 }
