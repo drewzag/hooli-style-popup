@@ -45,10 +45,6 @@ a:hover {
   height: 3em;
 }
 
-.nav {
-  display: flex;
-}
-
 .header__list {
   display: flex;
   justify-content: flex-end;
@@ -63,10 +59,27 @@ a:hover {
 .header__checkbox,
 .more__checkbox,
 .less__checkbox {
-  width: 30px;
-  height: 30px;
   appearance: none;
   position: absolute;
+}
+
+.header__checkbox {
+  width: 30px;
+  height: 30px;
+}
+
+.more__checkbox {
+  bottom: 10px;
+  right: 50px;
+  height: 30px;
+  width: 300px;
+}
+
+.more__checkbox:checked {
+  bottom: -145px;
+  right: 50px;
+  height: 30px;
+  width: 300px;
 }
 
 .popup__wrapper {
@@ -104,6 +117,7 @@ a:hover {
 }
 
 .popup__list {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
